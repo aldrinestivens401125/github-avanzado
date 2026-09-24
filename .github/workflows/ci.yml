@@ -31,6 +31,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Validar entorno de desarrollo
+      shell: pwsh-preview {0}
       env:
         TOKEN: ${{ secrets.DEV_TOKEN }}
       run: |
