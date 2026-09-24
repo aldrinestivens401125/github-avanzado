@@ -32,6 +32,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Validar entorno de producción
+      shell: pwsh
       env:
         TOKEN: ${{ secrets.PROD_TOKEN }}
       run: |
